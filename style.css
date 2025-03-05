@@ -23,6 +23,8 @@
     font-weight: 400;
 }
 
+
+/* Variables */
 :root{
     --Yellow: hsl(47, 88%, 63%);
 
@@ -34,6 +36,8 @@
 }
 
 
+
+/* Estilos generales */
 body{
     background-color: var(--Yellow);
     font-size: 1rem;
@@ -41,6 +45,8 @@ body{
     font-family: 'Figtree';
 }
 
+
+/* Contenedor principal */
 .blog-container{
     display: flex;
     justify-content: center;
@@ -49,18 +55,58 @@ body{
 }
 
 
+/* Tarjeta Blog*/
 .blog-card{
     background-color: var(--White);
     padding: 20px;
     border-radius: 10px;
-    max-width: 20rem;
-    
+    max-width: 22rem;
+    border: 1px solid black;
+    box-shadow: 10px 10px var(--Gray-950);
 }
 
 
+/* Elementos de la tarjeta */
 .blog-card_image{
     border-radius: 10px;
     height: auto;
     max-width: 100%;
     
+}
+
+.blog-card_category{
+    font-weight: 700;
+    padding: 5px 15px;
+    background-color: var(--Yellow);
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    color: black;
+}
+
+.blog-card_date{
+    font-size: 0.875rem;
+}
+
+.blog-card__description{
+    color: var(--Gray-500);
+}
+
+.blog-card__author{
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+}
+
+.blog-card__author-image{
+
+    height: 40px;
+    width: 40px;
+}
+
+.blog-card__author-name{
+    font-weight: 700;
+    margin-top: 0;
 }
