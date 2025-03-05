@@ -1,0 +1,66 @@
+
+@font-face{
+    font-family: "FigtreeItalic";
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "FigtreeItalic";
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400;
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray-500: hwb(0 42% 58%);
+    --Gray-950: hsl(0, 0%, 7%);
+    
+}
+
+
+body{
+    background-color: var(--Yellow);
+    font-size: 1rem;
+    padding: 16px;
+    font-family: 'Figtree';
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.blog-card{
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 20rem;
+    
+}
+
+
+.blog-card_image{
+    border-radius: 10px;
+    height: auto;
+    max-width: 100%;
+    
+}
